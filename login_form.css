@@ -1,0 +1,147 @@
+input, button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.form{
+	height: 86vh;
+	float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+	color: papayawhip;
+}
+.loginbox{
+    width: 400px;
+/*    height: 364px;*/
+    background: rgba(255,0,4,0.7);
+    box-shadow: 5px 5px 15px 0 rgba(126,126,126,0.5);
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.login_title{
+/*			text-align: center;*/
+    color: papayawhip;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+.item{
+    height: 45px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+    position: relative;
+}
+.item input{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.item input:focus+label,.item input:valid+label{
+    top: 0px;
+    font-size: 12px;
+}
+.item label{
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    transition: all 0.2s;
+}
+.regbtn{
+    padding: 10px 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+/*			text-transform: uppercase;*/
+    letter-spacing: 3px;
+    font-size: 13.5px;
+    text-decoration: none;
+}
+.regbtn:hover{
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(255,0,4,0.7);
+    box-shadow: 
+        0 0 5px 0 #fff,
+        0 0 25px 0 #fff,
+        0 0 50px 0 #fff,
+        0 0 100px 0 #fff;
+}
+.btn{
+    padding: 10px 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+/*			text-transform: uppercase;*/
+    letter-spacing: 3px;
+}
+.btn:hover{
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(255,0,4,0.7);
+    box-shadow: 
+        0 0 5px 0 #fff,
+        0 0 25px 0 #fff,
+        0 0 50px 0 #fff,
+        0 0 100px 0 #fff;
+}
+.btn>span{
+    position: absolute;
+}
+@keyframes line1{
+    50%,100%{
+        left: 100%;
+    }
+}
+.btn>span:nth-child(1){
+    width: 100%;
+    height: 2px;
+    background:-webkit-linear-gradient(left,transparent,#fff);
+    left: -100%;
+    top: 0px;
+    animation: line1 1s linear infinite;
+}
+@keyframes line2{
+    50%,100%{
+        top: 100%;
+    }
+}
+.btn>span:nth-child(2){
+    width: 2px;
+    height: 100%;
+    background:-webkit-linear-gradient(top,transparent,#fff);
+    right: 0px;
+    top: -100%;
+    animation: line2 1s 0.25s linear infinite;
+}
+@keyframes line3{
+    50%,100%{
+        left: -100%;
+    }
+}
+.btn>span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background:-webkit-linear-gradient(left,#fff,transparent);
+    left: 100%;
+    bottom: 0px;
+    animation: line3 1s 0.5s linear infinite;
+}
+@keyframes line4{
+    50%,100%{
+        top: -100%;
+    }
+}
+.btn>span:nth-child(4){
+    width: 2px;
+    height: 100%;
+    background:-webkit-linear-gradient(top,#fff,transparent);
+    left: 0px;
+    top: 100%;
+    animation: line4 1s 0.75s linear infinite;
+}
